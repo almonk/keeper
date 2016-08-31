@@ -14,11 +14,6 @@ class ViewController: NSViewController, WebFrameLoadDelegate {
     @IBOutlet var website: WebView!
 
     override func viewDidLoad() {
-//        let storage = NSHTTPCookieStorage.sharedHTTPCookieStorage()
-//        for cookie in storage.cookies! {
-//            storage.deleteCookie(cookie)
-//        }
-        
         super.viewDidLoad()
         website.frameLoadDelegate = self
         website.drawsBackground = false
@@ -39,10 +34,6 @@ class ViewController: NSViewController, WebFrameLoadDelegate {
         if currentUrl.rangeOfString("accounts.google.com") == nil{
             // We're in the main app
             // so lets setup the window
-            
-            let windowOriginPoint = CGPoint(x: 10, y: 0)
-            let windowSize = CGSize(width: 390, height: NSScreen.mainScreen()!.frame.size.height)
-            NSApp.mainWindow!.setFrame(NSRect(origin: windowOriginPoint, size: windowSize), display: true)
             
             website.stringByEvaluatingJavaScriptFromString("function addStyleString(str) { var node = document.createElement('style'); node.innerHTML = str; document.body.appendChild(node);} addStyleString('#gb, .QT3Do { display:none }'); addStyleString('.gb_4c { height: 0px!important; }'); addStyleString('html,body { background-color: transparent!important; }');")
         }
