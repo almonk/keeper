@@ -11,6 +11,8 @@
 		2E0C441A1D771CF600BED3E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0C44191D771CF600BED3E6 /* ViewController.swift */; };
 		2E0C441C1D771CF600BED3E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0C441B1D771CF600BED3E6 /* Assets.xcassets */; };
 		2E0C441F1D771CF600BED3E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0C441D1D771CF600BED3E6 /* Main.storyboard */; };
+		2E0C44271D771D5D00BED3E6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0C44261D771D5D00BED3E6 /* WebKit.framework */; };
+		2E0C442E1D772E3D00BED3E6 /* KeeperWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0C442D1D772E3D00BED3E6 /* KeeperWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		2E0C441B1D771CF600BED3E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E0C441E1D771CF600BED3E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E0C44201D771CF600BED3E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E0C44261D771D5D00BED3E6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2E0C442D1D772E3D00BED3E6 /* KeeperWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeeperWindow.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0C44271D771D5D00BED3E6 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +41,7 @@
 		2E0C440B1D771CF600BED3E6 = {
 			isa = PBXGroup;
 			children = (
+				2E0C44261D771D5D00BED3E6 /* WebKit.framework */,
 				2E0C44161D771CF600BED3E6 /* Keeper */,
 				2E0C44151D771CF600BED3E6 /* Products */,
 			);
@@ -54,6 +60,7 @@
 			children = (
 				2E0C44171D771CF600BED3E6 /* AppDelegate.swift */,
 				2E0C44191D771CF600BED3E6 /* ViewController.swift */,
+				2E0C442D1D772E3D00BED3E6 /* KeeperWindow.swift */,
 				2E0C441B1D771CF600BED3E6 /* Assets.xcassets */,
 				2E0C441D1D771CF600BED3E6 /* Main.storyboard */,
 				2E0C44201D771CF600BED3E6 /* Info.plist */,
@@ -131,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0C442E1D772E3D00BED3E6 /* KeeperWindow.swift in Sources */,
 				2E0C441A1D771CF600BED3E6 /* ViewController.swift in Sources */,
 				2E0C44181D771CF600BED3E6 /* AppDelegate.swift in Sources */,
 			);

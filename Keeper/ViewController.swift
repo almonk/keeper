@@ -7,12 +7,18 @@
 //
 
 import Cocoa
+import WebKit
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, WebFrameLoadDelegate {
+    
+    @IBOutlet var website: WebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        website.frameLoadDelegate = self
+        website.drawsBackground = false
+        website.mainFrameURL = "https://keep.google.com"
+        website.hidden = true
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +27,12 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
+    
+    func webView(sender: WebView!, didFinishLoadForFrame frame: WebFrame!) {
+        website.hidden = false
+        NSLog("Hello")
+        website.stringByEvaluatingJavaScriptFromString("function addStyleString(str) { var node = document.createElement('style'); node.innerHTML = str; document.body.appendChild(node);} addStyleString('#gb, .QT3Do { display:none }'); addStyleString('.gb_4c { height: 0px!important; }'); addStyleString('html,body { background-color: transparent!important; }');")
+    }
 
 }
 
