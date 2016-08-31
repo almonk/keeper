@@ -1,7 +1,7 @@
 # keeper
 A chromeless Google Keep client for macOS
 
-[Download for macOS](https://github.com/almonk/keeper/releases)\
+[Download for macOS](https://github.com/almonk/keeper/releases)
 
 I'm probably not going to actively update this or support it, so please make PRs if you want bug fixes 😬
 
