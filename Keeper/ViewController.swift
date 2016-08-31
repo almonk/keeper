@@ -14,10 +14,10 @@ class ViewController: NSViewController, WebFrameLoadDelegate {
     @IBOutlet var website: WebView!
 
     override func viewDidLoad() {
-        let storage = NSHTTPCookieStorage.sharedHTTPCookieStorage()
-        for cookie in storage.cookies! {
-            storage.deleteCookie(cookie)
-        }
+//        let storage = NSHTTPCookieStorage.sharedHTTPCookieStorage()
+//        for cookie in storage.cookies! {
+//            storage.deleteCookie(cookie)
+//        }
         
         super.viewDidLoad()
         website.frameLoadDelegate = self
