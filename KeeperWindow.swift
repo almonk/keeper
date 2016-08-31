@@ -27,7 +27,9 @@ class KeeperWindow: NSWindowController {
         window?.standardWindowButton(NSWindowButton.ZoomButton)?.hidden = true
         window?.titleVisibility = NSWindowTitleVisibility.Hidden
         window?.hasShadow = false
-        
+    }
+    
+    func makeFullHeight() {
         let windowOriginPoint = CGPoint(x: 10, y: 0)
         let windowSize = CGSize(width: 390, height: NSScreen.mainScreen()!.frame.size.height)
         window?.setFrame(NSRect(origin: windowOriginPoint, size: windowSize), display: true)
